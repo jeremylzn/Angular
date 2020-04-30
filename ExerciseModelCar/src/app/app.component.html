@@ -1,0 +1,16 @@
+<select (change)="order($event.target.value)">
+  <option *ngFor="let o of options">{{o}}</option>
+</select>
+
+<br>
+<br>
+
+<table border="1">
+    <tr *ngFor="let c of car">
+        <td>{{c.manufacturer}}</td>
+        <td>{{c.model}}</td>
+        <td>{{c.price}}</td>
+        <td>{{c.wiki}}</td>
+        <td>{{c.img}}</td>
+    </tr>
+</table>

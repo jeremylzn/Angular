@@ -1,0 +1,6 @@
+<h1>Search : {{filter}}</h1>
+<input [(ngModel)]="filter" />
+
+<ul *ngFor="let m of ModelCar">
+    <li *ngIf="!filter||m.startsWith(filter)">{{m}}</li>
+</ul>

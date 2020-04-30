@@ -1,0 +1,12 @@
+<div>
+    <h1>Movie List</h1>
+    <ul>
+        <li *ngFor="let p of arr">
+            <p (click)="Details(p)">{{p.movie_name}}</p>
+        </li>
+    </ul>
+
+    <div *ngIf="item">
+        ID : {{item.id}} PRICE: {{item.price}} DATE : {{item.movie_date}}
+    </div>
+</div>

@@ -1,0 +1,12 @@
+<div>
+    <h1>{{childInfos.name}}</h1>
+    <h2>currencies :</h2>
+    <ul>
+        <li *ngFor="let c of childInfos.currencies">
+            <p>{{c.code}}</p>
+            <p>{{c.name}}</p>
+            <p>{{c.symbol}}</p>
+        </li>
+    </ul>
+    <img src="{{childInfos.flag}}" width="200">
+</div>

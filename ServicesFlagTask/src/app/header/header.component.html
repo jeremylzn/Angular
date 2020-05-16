@@ -1,0 +1,5 @@
+<div>
+    <select (change)="saveCountry($event.target.value)">
+        <option *ngFor="let n of apiList">{{n.name}}</option>
+    </select>
+</div>

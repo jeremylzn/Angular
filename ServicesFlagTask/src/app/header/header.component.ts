@@ -9,7 +9,7 @@ import { ApiService } from '../shared/services/api.service';
 })
 export class HeaderComponent implements OnInit {
 
-  public  apiList:Api[];
+  public apiList:Api[];
 
   constructor(private apiService:ApiService) {
     this.apiList=this.apiService.apiList;

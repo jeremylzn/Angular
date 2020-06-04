@@ -1,0 +1,23 @@
+<h3>Post User : </h3>
+
+<p>UserId:</p>
+<input type="number" [(ngModel)]="newUser.userId" />
+
+<p>title:</p>
+<input type="text" [(ngModel)]="newUser.title" />
+
+
+<p>body:</p>
+<input type="text" [(ngModel)]="newUser.body" />
+
+<br><br>
+
+<button (click)="PostUser()">add user</button>
+
+
+<!-- <div *ngIf="myUserInfo.newUser">
+    <h3>New user added successfully</h3>
+    <p>id: {{myUserInfo.newUser.id}}</p>
+    <p>title: {{myUserInfo.newUser.title}}</p>
+    <p>createdAt: {{myUserInfo.newUser.title}}</p>
+</div> -->

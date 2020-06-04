@@ -1,0 +1,18 @@
+<h3>Edit User :</h3>
+
+<p>userId:</p>
+<input type="number" [(ngModel)]="editedUser.userId" />
+
+<p>id:</p>
+<input type="number" [(ngModel)]="editedUser.id" />
+
+
+<p>title:</p>
+<input type="text" [(ngModel)]="editedUser.title" />
+
+<p>body:</p>
+<input type="text" [(ngModel)]="editedUser.body" />
+
+<br><br>
+
+<button (click)="PutUser()">edit user</button>
